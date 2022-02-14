@@ -1,4 +1,4 @@
-
+//ship properties
 class Ship {
     constructor(hull, firepower, accuracy){ 
         this.hull = hull;
@@ -12,6 +12,7 @@ class Ship {
     constructor(hull, firepower, accuracy) {
         super(hull, firepower, accuracy)
     }
+    //attack method to hit alien ship
     attack(ar) {
         if(this.accuracy >=Math.random()) 
         {
@@ -29,7 +30,7 @@ class Ship {
             }
     }
 
-
+//alien class 
 class Alien1 extends Ship{
     constructor(hull, firepower, accuracy){
         super(hull, firepower, accuracy)
@@ -49,7 +50,7 @@ class Alien1 extends Ship{
     }
 }
 
-
+//showing the number of alien ships that i will be fighting
 let ar= [];
 for(let i=0; i < 6; i++)
 {
@@ -58,18 +59,21 @@ for(let i=0; i < 6; i++)
 
 let hero= new USS(20,5,0.7);
 
+//showing continue function ; yes to continue, no to retreat
 function continueBattle(){
     let cont = prompt("Would like to continue battling?", "Yes or no")
     if(cont.toLowerCase()==='yes' && hero.hull > 0){
-        alert("You have")
+        alert("You have another day to live")
         return true
     }else{
+        //my retreat 
         (con.toLowerCase()==="no")
         alert("retreat results")
         return false
     } 
 }
 
+//how it updates on the dom
 function spaceBattle(hero, ar)
     {
         for(i=0; i<ar.length; i++){
@@ -96,7 +100,24 @@ function spaceBattle(hero, ar)
             }
         }
     }
+    //
     spaceBattle(hero,ar);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
