@@ -10,6 +10,7 @@
     background-color: black;
     color: white;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -23,12 +24,8 @@ flex-direction: column;
 justify-content: space-around;
 align-items: center;
 }
-.left{
 
-}
-.right{
-    
-}
+
 
 .nameBox{
     border: 1px solid black;
